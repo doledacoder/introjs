@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keyframes</title>
+  <style>
+      #man {
+          height: 120px;
+          width: 160px;
+          background-image: url(backgrounds/spritesheet.png);
+          border: solid 1px;
+          animation: walk 1s steps(8) infinite;
+          }
+      /* wrap for the background */
+      #wrap {
+          padding-top: 90px;
+          background-color: aquamarine;
+          animation: move_bg 6s infinite linear;
+      }
+      @keyframes walk {
+          to {
+              background-position: -960px;
+
+          }
+      }
+      div:hover {
+            animation-play-state: paused;
+      }
+      }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+    <div id="MAN"></div>
+    </div>
+
+</body>
+</html>
+
